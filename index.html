@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo ♥️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nadaaa es lo q parece milk jiji</h1>
+        <p>Para empezar bb este ramo ño es de encargo ti di la mentirita para q me trajera papel de kity jiji hay le explico linda ❤️</p>
+        <br>
+        <p>Bueno mi amor hace 5 años yo te pedi un dia como este si querias ser mi novia 🥺 lastimosamente me dijo q no 😔 pero igual hoy eres mia
+            10 dias despues del no jijiji 🥺 me encantas y nunca olvidare este dia eres muy especial para mi y por eso queria sorprenderte de una manera
+            que no te imaginabas eres muy especial y la casualidad mas bonita que a ellegado a mi vida ♥️
+        </p>
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 3 + "s"; // Duración aleatoria
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000); // Elimina el corazón después de 5s
+        }
+
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>
